@@ -4,10 +4,10 @@
         const name = faker.name.findName();
         const email = faker.internet.email();
         const phone = faker.phone.phoneNumber();
-        const prefecture_text = faker.address.state();
+        const remarks = faker.address.state();
         
         $('#name').val(name);
-        $('#prefecture_text').val(prefecture_text);
+        $('#remarks').val(remarks);
     } else {
         console.error('Faker chưa load');
     }
